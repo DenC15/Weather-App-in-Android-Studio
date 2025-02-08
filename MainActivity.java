@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String city = cityName.getText().toString().trim();
                 if (!city.isEmpty()) {
-                    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "a8656518196f1aef19f84ee3d5deeb7f";
+                    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "API key here";
                     fetchWeather(url);
                 } else {
                     Toast.makeText(MainActivity.this, "Enter City", Toast.LENGTH_SHORT).show();
